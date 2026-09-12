@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "CartPlay",
+    "slug": "cartplay",
+    "version": "0.3.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#6C4CF1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kaustubh.cartplay",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.kaustubh.cartplay",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#6C4CF1"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

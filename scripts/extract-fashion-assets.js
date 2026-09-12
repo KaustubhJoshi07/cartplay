@@ -13,6 +13,7 @@ if (!existsSync(marker)) {
       ? readdirSync(partsDir).filter(name => name.startsWith('fashion-assets.tar.gz.part-')).sort()
       : [];
     if (!parts.length) throw new Error('Missing bundled fashion asset parts.');
+    mkdirSync(join(root, 'bundles'), { recursive: true });
     writeFileSync(archive, Buffer.concat(parts.map(part => readFileSync(join(partsDir, part)))));
   }
   mkdirSync(join(root, 'assets'), { recursive: true });
